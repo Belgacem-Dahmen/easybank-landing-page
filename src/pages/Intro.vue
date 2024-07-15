@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import Primaybtn from './Primaybtn.vue';
+import Primaybtn from '../components/Primaybtn.vue';
 </script>
 
 <style scoped>
@@ -65,14 +65,16 @@ import Primaybtn from './Primaybtn.vue';
 @media screen and (min-width:376px) {
     .intro {
         flex-direction: row;
-        
-   }
+
+    }
+
     .intro-imgs {
         position: absolute;
         background-position: bottom;
         right: -10%;
         top: -30%;
     }
+
     .intro-text {
         margin-top: 150px;
         text-align: left;
