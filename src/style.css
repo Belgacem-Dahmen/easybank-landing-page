@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Primary Colors */
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+
+  /* Neutral Colors */
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-size-body-copy: 18px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-family-public: "Public Sans", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  max-width: 1440px;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--font-family-public);
+  font-size: var(--font-size-body-copy);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-blue);
+  background-color: var(--color-very-light-gray);
+  margin: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+/* Mobile First Styles */
+.hidden-on-mobile {
+  display: none;
+}
+
+.hidden-on-desktop {
+  display: block;
+}
+
+
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+  :root {
+    --font-size-body-copy: 20px;
+  }
+
+  body {
+    font-size: var(--font-size-body-copy);
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  :root {
+    --font-size-body-copy: 22px;
+  }
+
+  .hidden-on-mobile {
+    display: block;
+
+  }
+
+  .hidden-on-desktop {
+    display: none;
+  }
+
+  body {
+    font-size: var(--font-size-body-copy);
+  }
+}
