@@ -77,7 +77,20 @@ import PrimaryBtn from './PrimaryBtn.vue';
     font-weight: var(--font-weight-light);
 
 }
+.footer-left {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
 
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
 
 @media screen and (min-width : 376px) {
     .footer {

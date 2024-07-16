@@ -64,6 +64,7 @@ import PrimaryBtn from '../components/PrimaryBtn.vue';
 
 @media screen and (min-width:376px) {
     .intro {
+        
         flex-direction: row;
 
     }
