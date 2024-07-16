@@ -39,6 +39,7 @@ body {
   color: var(--color-dark-blue);
   background-color: var(--color-very-light-gray);
   margin: auto;
+  overflow-x: hidden;
 }
 
 /* Make images easier to work with */

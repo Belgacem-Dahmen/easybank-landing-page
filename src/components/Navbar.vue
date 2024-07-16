@@ -11,13 +11,13 @@
             </ul>
 
         </div>
-        <Primaybtn :hiddenOnMobile=true text="Request Invite" />
+        <PrimaryBtn :hiddenOnMobile=true text="Request Invite" />
         <img class="hidden-on-desktop" src="../assets/images/icon-hamburger.svg" alt="">
     </div>
 </template>
 
 <script setup>
-import Primaybtn from './Primaybtn.vue';
+import PrimaryBtn from './PrimaryBtn.vue';
 </script>
 
 <style scoped>

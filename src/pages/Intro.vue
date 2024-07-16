@@ -13,13 +13,13 @@
             </p>
 
 
-            <Primaybtn :hiddenOnMobile=false text="Request Invite" />
+            <PrimaryBtn :hiddenOnMobile=false text="Request Invite" />
         </div>
     </div>
 </template>
 
 <script setup>
-import Primaybtn from '../components/Primaybtn.vue';
+import PrimaryBtn from '../components/PrimaryBtn.vue';
 </script>
 
 <style scoped>
