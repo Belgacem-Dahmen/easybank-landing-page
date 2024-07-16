@@ -70,7 +70,7 @@ const services = ref([
     .services {
         margin-top: 350px;
         text-align: left;
-        padding-left: 100px;
+        padding: 0 100px;
     }
 
     .services-container {

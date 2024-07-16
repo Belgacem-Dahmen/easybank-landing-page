@@ -1,6 +1,6 @@
 <template>
     <footer class="footer">
-        <div>
+        <div class="footer-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
                 <defs>
                     <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
@@ -36,9 +36,9 @@
             <p class="footer__links-list__item">Privacy Policy</p>
 
         </div>
-        <div>
+        <div class="footer-right">
             <PrimaryBtn :hiddenOnMobile=false text="Request Invite" />
-            <p>© Easybank. All Rights Reserved </p>
+            <p class="copyright">© Easybank. All Rights Reserved </p>
         </div>
     </footer>
 </template>
@@ -81,9 +81,28 @@ import PrimaryBtn from './PrimaryBtn.vue';
 
 @media screen and (min-width : 376px) {
     .footer {
+        padding: 25px 100px;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: center;
     }
 
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        text-align: left;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
 }
 </style>
