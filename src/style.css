@@ -80,6 +80,7 @@ select {
 
   body {
     font-size: var(--font-size-body-copy);
+    overflow-x: hidden;
   }
 }
 
@@ -100,5 +101,6 @@ select {
 
   body {
     font-size: var(--font-size-body-copy);
+    overflow-x: hidden;
   }
 }
