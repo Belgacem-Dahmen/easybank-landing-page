@@ -92,7 +92,7 @@ import PrimaryBtn from './PrimaryBtn.vue';
     align-items: center;
 }
 
-@media screen and (min-width : 376px) {
+@media screen and (min-width : 876px) {
     .footer {
         padding: 25px 100px;
         flex-direction: row;

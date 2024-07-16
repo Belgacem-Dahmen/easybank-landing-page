@@ -68,4 +68,10 @@ const articles =
         gap: 25px;
     }
 }
+/* New styles for tablets */
+@media screen and (max-width: 1024px) {
+    .articles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 </style>

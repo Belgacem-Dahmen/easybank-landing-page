@@ -80,4 +80,11 @@ const services = ref([
         gap: 25px;
     }
 }
+
+/* New styles for tablets */
+@media screen and (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 </style>

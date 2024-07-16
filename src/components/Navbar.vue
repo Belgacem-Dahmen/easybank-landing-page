@@ -14,6 +14,7 @@
         <PrimaryBtn :hiddenOnMobile=true text="Request Invite" />
         <img class="hidden-on-desktop" src="../assets/images/icon-hamburger.svg" alt="">
     </div>
+   
 </template>
 
 <script setup>
