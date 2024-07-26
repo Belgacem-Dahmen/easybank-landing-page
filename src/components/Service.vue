@@ -1,7 +1,7 @@
 <template>
     <article class="service">
 
-        <img :src="getImageUrl(service.url_img)" alt="">
+        <img :src="resolveUrl(service.url_img)" alt="">
         <p class="service-title">{{ service.title }}</p>
 
 
@@ -10,9 +10,9 @@
 </template>
 
 <script setup>
-const getImageUrl = (url) => {
-    return new URL(url, import.meta.url).href;
-}
+const resolveUrl = (relativePath) => {
+    return new URL(`../assets/images/${relativePath}`, import.meta.url).href;
+};
 
 const { service } = defineProps({
     service: Object

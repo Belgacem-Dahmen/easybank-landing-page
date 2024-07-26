@@ -1,6 +1,7 @@
 <template>
     <div class="article">
-        <img class="article__img" :src="getImageUrl(article.img_url)" :alt="article.title">
+        <img class="article__img" :src="resolveUrl(article.img_url)" :alt="article.title">
+        
         <div class="article__description">
             <p class="article__description-author">By {{ article.author }}</p>
             <p class="article__description-title"> {{ article.title }}</p>
@@ -11,9 +12,9 @@
 </template>
 
 <script setup>
-const getImageUrl = (url) => {
-    return new URL(url, import.meta.url).href;
-}
+const resolveUrl = (relativePath) => {
+    return new URL(`../assets/images/${relativePath}`, import.meta.url).href;
+};
 const { article } = defineProps({
     article: Object
 })
